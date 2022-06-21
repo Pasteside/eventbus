@@ -4,7 +4,6 @@ import me.bush.eventbus.annotation.EventListener;
 import me.bush.eventbus.annotation.ListenerPriority;
 import me.bush.eventbus.bus.EventBus;
 import me.bush.eventbus.event.Event;
-import me.bush.eventbus.handler.handlers.ASMHandler;
 import me.bush.eventbus.handler.handlers.LambdaHandler;
 import me.bush.eventbus.handler.handlers.ReflectHandler;
 
@@ -44,7 +43,6 @@ public abstract class Handler {
      * @param listener   A method with an {@link EventListener} annotation.
      * @param subscriber The object or class that the listener belongs to.
      * @param logger     The logger to use for error messages.
-     * @see ASMHandler
      * @see LambdaHandler
      * @see ReflectHandler
      */
